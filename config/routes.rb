@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :saves
   resources :sessions, only: [:create]
   resources :users
   resources :palettes
