@@ -1,3 +1,3 @@
 class PaletteSerializer < ActiveModel::Serializer
-  attributes :id, :colors
+  attributes :id, :colors, :tags
 end
