@@ -19,7 +19,7 @@ palettes = Palette.create([
     {colors: ['#b9936c', '#dac292', '#e6e2d3', '#c4b7a6' ], tags: ['neutral', 'gray', 'cream', 'beige', 'tan']},
     {colors: ['#d5f4e6', '#80ced6', '#fefbd8', '#618685' ], tags: ['blue', 'teal', 'cream', 'calm']},
     {colors: ['#fefbd8', '#618685', '#36486b', '#4040a1' ], tags: ['blue', 'teal', 'cream', 'water']},
-    {colors: ['#c8c3cc', '#563f46', '#8ca3a3', '#484f4f' ], tags: ['maroon', 'purple', 'teal']},
+    {colors: ['#c8c3cc', '#563f46', '#8ca3a3', '#484f4f' ], tags: ['maroon', 'purple', 'gray']},
     {colors: ['#e0e2e4', '#c6bcb6', '#96897f', '#625750' ], tags: ['light', 'monochromatic', 'neutral', 'gray', 'tan']},
     {colors: ['#bccad6', '#8d9db6', '#667292', '#f1e3dd' ], tags: ['light', 'blue', 'calm', 'beige']},
     {colors: ['#cfe0e8', '#b7d7e8', '#87bdd8', '#daebe8' ], tags: ['light', 'blue', 'monochromatic', 'calm']},
@@ -27,10 +27,10 @@ palettes = Palette.create([
     {colors: ['#fff2df', '#d9ad7c', '#a2836e', '#674d3c' ], tags: ['brown', 'tan', 'cream', 'beige']},
     {colors: ['#f9d5e5', '#eeac99', '#e06377', '#c83349' ], tags: ['pink', 'peach', 'monochromatic']},
     {colors: ['#F6D7A7', '#F6EABE', '#C8E3D4', '#87AAAA' ], tags: ['teal', 'cream', 'beige', 'water']},
-    {colors: ['#F75F1C', '#FF9A00 ', '#000000', '#881EE4', '#85E21F' ], tags: ['bright', 'halloween', 'black', 'purple', 'green', 'orange']},
+    {colors: ['#F75F1C', '#FF9A00 ', '#000000', '#85E21F' ], tags: ['bright', 'halloween', 'black','green', 'orange']},
     {colors: ['#000000', '#ff6a1f', '#ff861f', '#ffffff' ], tags: ['bright', 'halloween', 'black', 'white', 'orange']},
-    {colors: ['#95B645', ' #FEB937 ', '#EFE1C6', '#FAF6EA', '#66666E' ], tags: ['gray', 'white', 'cream', 'yellow', 'green', 'kids']},
-    {colors: ['#fecf6d', '#99e9eb ', '#2d884d', '#4091d7', '#b34045' ], tags: ['maroon', 'blue', 'green', 'yellow', 'kids']},
+    {colors: ['#95B645', ' #FEB937 ', '#EFE1C6', '#66666E' ], tags: ['gray', 'cream', 'yellow', 'green', 'kids']},
+    {colors: ['#fecf6d', '#99e9eb ', '#2d884d', '#4091d7' ], tags: ['blue', 'green', 'yellow', 'kids']},
   ]
 
 )
