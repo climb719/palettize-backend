@@ -1,12 +1,18 @@
 Rails.application.routes.draw do
+
   resources :saves, only: [:delete]
-  resources :sessions, only: [:create]
+  resources :sessions
   resources :users, only: [:index, :create]
+
  
 
   resources :palettes do
     resources :save, only: [:create]  # for POST 
  end 
+
+ get "/autologin", to: 'sessions#autologin'
+
+
 
 
 

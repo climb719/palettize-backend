@@ -7,6 +7,11 @@ class SessionsController < ApplicationController
     else
       render json: {errors: "Username or password is incorrect"}, status: :forbidden
     end
-   end
+  end
+
+
+  def autologin
+    byebug
+  end
 
 end
