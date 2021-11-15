@@ -5,9 +5,11 @@ Rails.application.routes.draw do
 
  
 
-  resources :palettes do
-    resources :saves
- end 
+  resources :palettes 
+  
+#   do
+#     resources :
+#  end 
 
  get "/autologin", to: 'sessions#autologin'
 
