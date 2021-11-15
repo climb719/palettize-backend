@@ -5,8 +5,7 @@ class FavoritesController < ApplicationController
         set_palette
         palette = logged_in_user.palettes.build(id: @palette.id, colors: @palette.colors, tags: @palette.tags)
         byebug
-       
-     end
+    end
  
  
     private
