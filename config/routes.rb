@@ -3,13 +3,9 @@ Rails.application.routes.draw do
   resources :sessions
   resources :users, only: [:index, :create]
 
- 
-
-  resources :palettes 
-  
-#   do
-#     resources :
-#  end 
+  resources :palettes do
+    resources :favorites
+ end 
 
  get "/autologin", to: 'sessions#autologin'
 
