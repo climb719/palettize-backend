@@ -1,5 +1,5 @@
 class Palette < ApplicationRecord
-    has_many :saves
-    has_many :users, through: :saves
+    has_many :favorites
+    has_many :users, through: :favorites
   
 end

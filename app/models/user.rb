@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-    has_many :saves
-    has_many :palettes, through: :saves
+    has_many :favorites
+    has_many :palettes, through: :favorites
   
     validates :username, uniqueness: true
     has_secure_password
