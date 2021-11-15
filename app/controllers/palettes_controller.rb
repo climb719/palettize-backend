@@ -8,7 +8,7 @@ class PalettesController < ApplicationController
 
     def create
         palette = Palette.new(palette_params)
-        byebug
+       # byebug
         if palette.save
             render json: palette_params, status: :created
         else
@@ -26,7 +26,7 @@ class PalettesController < ApplicationController
     private
 
     def palette_params
-        params.require(:palette).permit(:colors, :tags)
+        params.require(:palette).permit(:colors => [], :tags => [])
     end
     
 end
