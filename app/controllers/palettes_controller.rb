@@ -10,7 +10,7 @@ class PalettesController < ApplicationController
         palette = Palette.new(palette_params)
        # byebug
         if palette.save
-            render json: palette_params, status: :created
+            render json: palette, status: :created
         else
             render json: palette.errors, status: :unprocessable_entity
         end
