@@ -1,31 +1,32 @@
 class FavoritesController < ApplicationController
 
-
+    def index
+        favorites = Favorite.all
+        render json: favorites
+    end
 
     def create
-        set_palette
-        palette = logged_in_user.palettes.build(colors: @palette.colors, tags: @palette.tags)
-        
-        if palette.save
-            byebug
-            render json: { palette: PaletteSerializer.new(palette), token: encode_token(logged_in_user.id)}
-        else
-            {errors: palette.errors.full_messages}
-        end
+     set_palette_and_user_id
+        byebug
+     favorite = Favorite.create(favorite_params)
+     if favorite.save
+        byebug
+     end
     end
  
  
     private
  
-    def set_palette
-       @palette = Palette.find_by(id: params[:palette_id])
+    def set_palette_and_user_id
+       @palette = Palette.find_by(id: params[:palette_id]).id
+       @user = logged_in_user.id
     end
+
+    def favorite_params
+        params.require(:favorite).permit(:user_id, :palette_id)
+    end
+
+    
+    
 end
 
-
-
-#     def create
-#         palette = Palette.find_by(id: params[:palette_id])
-#         logged_in_user.palettes.build(id: palette.id, colors: palette.colors, tags: palette.tags)    
-#      end
-# end
