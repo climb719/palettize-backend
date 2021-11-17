@@ -6,6 +6,11 @@ class UsersController < ApplicationController
         render json: users
     end
 
+    def show
+        favorites = logged_in_user.favorites
+        render json: favorites
+    end
+
 
 
     def create
