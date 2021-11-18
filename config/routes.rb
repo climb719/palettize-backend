@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # end
 
   resources :palettes do
-    resources :favorites, only: [:create]
+    resources :favorites, only: [:create, :destroy]
  end 
 
  get "/autologin", to: 'sessions#autologin'

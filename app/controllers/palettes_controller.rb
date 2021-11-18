@@ -3,7 +3,8 @@ class PalettesController < ApplicationController
 
     def index
         palettes = Palette.all
-        render json: palettes
+         render json: palettes 
+        #.to_json(include: {favorites: {only: [:id]}})
     end
 
     def create
